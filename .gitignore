@@ -1,0 +1,9 @@
+.idea/
+.vs/
+*.user
+*.suo
+bin/
+obj/
+node_modules/
+.env
+.env.*

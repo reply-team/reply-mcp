@@ -1,0 +1,32 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.reply/mcp-server",
+  "title": "Reply.io",
+  "description": "AI-powered access to Reply.io's sales engagement platform — manage sequences, contacts, and outreach statistics.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/reply-team/reply-mcp.git",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp.reply.io",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "value": "{{REPLY_API_KEY}}",
+          "isSecret": true
+        }
+      ],
+      "variables": [
+        {
+          "name": "REPLY_API_KEY",
+          "isRequired": true,
+          "isSecret": true,
+          "description": "Reply.io API key from your account settings"
+        }
+      ]
+    }
+  ]
+}
