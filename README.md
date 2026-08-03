@@ -21,6 +21,22 @@ No local installation required. Free for all Reply.io users.
 
 📖 **Full documentation:** [docs.reply.io/reply-mcp](https://docs.reply.io/reply-mcp)
 
+## Where this fits
+
+Reply's agentic toolkit is three pieces. They are complementary, not alternatives:
+
+| | What it is | When you want it |
+|---|---|---|
+| **[reply CLI](https://github.com/reply-team/reply-cli)** | `npm i -g reply-cli` — authenticated access to *every* v3 endpoint via `reply api` | Your agent has a shell. This is the complete surface. |
+| **Reply MCP** (this repo) | A curated tool catalog over `mcp.reply.io` | Your client speaks MCP and has no shell — desktop apps, hosted assistants. |
+| **[reply-skills](https://github.com/reply-team/reply-skills)** | Outbound expertise as markdown skills: what to do, in what order, with what guardrails | Your agent knows *how* to call things but not *what* to run. |
+
+MCP gives your agent tools. Skills give it judgement. Most setups want both; a shell-capable
+agent can do everything through the CLI alone.
+
+The shortest path that works: install the CLI, `reply auth login`, `reply skills install`, then
+talk to your agent in plain words. MCP is optional — add it when your client has no shell.
+
 ## Connect
 
 Reply MCP is a remote server at `https://mcp.reply.io`. Authenticate with a **scoped personal API key** (recommended) or **OAuth**, then add it to your client.
@@ -216,6 +232,9 @@ Once connected, you can ask your AI assistant things like:
 - [Reply MCP documentation](https://docs.reply.io/reply-mcp) — capabilities, authentication, and connection guide.
 - [Connecting Reply MCP to your AI model](https://support.reply.io/en/articles/12955018-connecting-reply-mcp-to-your-ai-model) — Help Center walkthrough.
 - [Reply MCP overview](https://reply.io/mcp/)
+- [reply CLI](https://github.com/reply-team/reply-cli) — the same Reply.io surface from a terminal, including every v3 endpoint via `reply api`.
+- [reply-skills](https://github.com/reply-team/reply-skills) — outbound expertise as installable skill packs for your agent.
+- [agents.reply.io](https://agents.reply.io) — how the CLI, MCP and the skills fit together, and which interface to pick.
 
 ## License
 
