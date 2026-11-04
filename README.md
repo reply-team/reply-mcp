@@ -34,8 +34,8 @@ Reply's agentic toolkit is three pieces. They are complementary, not alternative
 MCP gives your agent tools. Skills give it judgement. Most setups want both; a shell-capable
 agent can do everything through the CLI alone.
 
-The shortest path that works: install the CLI, `reply auth login`, `reply skills install`, then
-talk to your agent in plain words. MCP is optional — add it when your client has no shell.
+The shortest path that works: install the CLI, `reply auth login`, `reply skills install` for the Reply skills,
+and add Jason's skills (`jason skills install`) for the judgement, then talk to your agent in plain words. MCP is optional — add it when your client has no shell.
 
 ## Connect
 
