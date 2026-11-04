@@ -27,9 +27,9 @@ Reply's agentic toolkit is three pieces. They are complementary, not alternative
 
 | | What it is | When you want it |
 |---|---|---|
-| **[reply CLI](https://github.com/reply-team/reply-cli)** | `npm i -g reply-cli` — authenticated access to *every* v3 endpoint via `reply api` | Your agent has a shell. This is the complete surface. |
+| **[reply CLI](https://github.com/reply-team/reply-cli)** | `npm i -g reply-cli` — authenticated access to *every* v3 endpoint via `reply api`, with Reply's own skills in the package (`reply skills install`) | Your agent has a shell. This is the complete surface. |
 | **Reply MCP** (this repo) | A curated tool catalog over `mcp.reply.io` | Your client speaks MCP and has no shell — desktop apps, hosted assistants. |
-| **[reply-skills](https://github.com/reply-team/reply-skills)** | Outbound expertise as markdown skills: what to do, in what order, with what guardrails | Your agent knows *how* to call things but not *what* to run. |
+| **[Jason](https://github.com/reply-team/jason-ai)** | Outbound expertise as markdown skills — what to do, in what order, with what guardrails — and a local runtime that keeps campaign work durable (`jason skills install`) | Your agent knows *how* to call things but not *what* to run. |
 
 MCP gives your agent tools. Skills give it judgement. Most setups want both; a shell-capable
 agent can do everything through the CLI alone.
@@ -233,7 +233,7 @@ Once connected, you can ask your AI assistant things like:
 - [Connecting Reply MCP to your AI model](https://support.reply.io/en/articles/12955018-connecting-reply-mcp-to-your-ai-model) — Help Center walkthrough.
 - [Reply MCP overview](https://reply.io/mcp/)
 - [reply CLI](https://github.com/reply-team/reply-cli) — the same Reply.io surface from a terminal, including every v3 endpoint via `reply api`.
-- [reply-skills](https://github.com/reply-team/reply-skills) — outbound expertise as installable skill packs for your agent.
+- [Jason](https://github.com/reply-team/jason-ai) — the SDR expertise and the runtime skills as installable skill packs for your agent, and the local runtime they teach. (The former `reply-skills` repository is archived.)
 - [agents.reply.io](https://agents.reply.io) — how the CLI, MCP and the skills fit together, and which interface to pick.
 
 ## License
